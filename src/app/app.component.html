@@ -1,0 +1,24 @@
+<div class="container">
+  <img id="logo" src="../assets/logo.png" alt="DocSnap Logo">
+  <div id="main">
+    <label for="prescriptionImage" class="upload-label">Upload Prescription</label>
+    <input type="file" id="prescriptionImage" (change)="onFileSelected($event)" accept="image/*">
+    <div *ngIf="selectedFile" class="file-preview">
+      <img [src]="filePreview" alt="File Preview" class="file-thumbnail">
+      <div class="file-info">
+        <span>{{ selectedFileName }}</span>
+        <button (click)="clearFile()">Remove</button>
+      </div>
+    </div>
+    <div id="scroll-down-bar">
+      <select id="option-select" [(ngModel)]="selectedLanguage">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Kannada">Kannada</option>
+      </select>
+    </div>
+    <button id="submitButton" (click)="analyzePrescription()">Submit</button>
+    <div id="loading" *ngIf="isLoading">Processing...</div>
+    <div id="apiResponse" [innerHTML]="apiResponse"></div>
+  </div>
+</div>
