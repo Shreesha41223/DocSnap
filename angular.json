@@ -95,12 +95,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-          "baseHref": "/angular-app/"
+  "builder": "angular-cli-ghpages:deploy",
+  "options": {
+    "baseHref": "/angular-app/",
+    "repo": "https://github.com/Shreesha41223/DocSnap.git"
   }
 }
-
       }
     }
   },

@@ -10,6 +10,13 @@ body {
     color: #333;
   }
   
+  .out{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container {
     background: #fff;
     padding: 30px;
@@ -158,4 +165,6 @@ body {
       padding: 10px 0;
     }
   }
+
+  
   
