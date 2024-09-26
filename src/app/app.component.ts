@@ -20,7 +20,7 @@ export class AppComponent {
   selectedFileName: string = '';
   selectedFile: File | null = null;
   filePreview: string | ArrayBuffer | null = null;
-  API_KEY: string = 'AIzaSyBSgK8w0l0g9Aym2lWeFdvP9k_dTpQU_JY';
+  API_KEY: string = 'add_your_api';
 
   async fileToGenerativePart(file: File): Promise<any> {
     const base64EncodedDataPromise = new Promise<string>((resolve) => {
